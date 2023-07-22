@@ -85,36 +85,11 @@ if (!isset($_SESSION['email'])) {
                     </div>
 
                     <div class="form-group">
-                      <label for="email2" class="col-sm-3 control-label">Specializace:</label>
-                      <div class="col-sm-9">
-                        <select onChange="" name="specialization" id="specialization" class="form-control" required>
-
-                          <?php foreach ($specializations as $specializationOption) : ?>
-                            <option value="<?php echo $specializationOption; ?>" <?php if ($record['specialization'] === $specializationOption)
-                                                                                    echo 'selected'; ?>>
-                              <?php echo $specializationOption; ?>
-                            </option>
-                          <?php endforeach; ?>
-
-                        </select>
-                      </div>
+                    <label for="email2" class="col-sm-3 control-label">Město:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="city" name="city" value="<?php echo $record['city']; ?>" >
                     </div>
-
-                    <div class="form-group">
-                      <label for="email2" class="col-sm-3 control-label">Kraj:</label>
-                      <div class="col-sm-9">
-                        <select onChange="" name="city" id="city" class="form-control" required>
-
-                          <?php foreach ($citys as $cityOption) : ?>
-                            <option value="<?php echo $cityOption; ?>" <?php if ($record['city'] === $cityOption)
-                                                                            echo 'selected'; ?>>
-                              <?php echo $cityOption . ' city'; ?>
-                            </option>
-                          <?php endforeach; ?>
-
-                        </select>
-                      </div>
-                    </div>
+                  </div>
 
                     <div class="form-group">
                       <label for="email2" class="col-sm-3 control-label">Email:</label>
@@ -126,7 +101,7 @@ if (!isset($_SESSION['email'])) {
 
                     <div class="row">
                       <div class="col-sm-9 col-sm-offset-3">
-                        <button type="submit" class="btn btn-success" name="update-doctor-profile">Update</button>
+                        <button type="submit" class="btn btn-success" name="update-doctor-profile">Aktualizovat</button>
 
                       </div>
                     </div>

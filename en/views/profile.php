@@ -85,36 +85,11 @@ if (!isset($_SESSION['email'])) {
                     </div>
 
                     <div class="form-group">
-                      <label for="email2" class="col-sm-3 control-label">Specialization:</label>
-                      <div class="col-sm-9">
-                        <select onChange="" name="specialization" id="specialization" class="form-control" required>
-
-                          <?php foreach ($specializations as $specializationOption) : ?>
-                            <option value="<?php echo $specializationOption; ?>" <?php if ($record['specialization'] === $specializationOption)
-                                                                                    echo 'selected'; ?>>
-                              <?php echo $specializationOption; ?>
-                            </option>
-                          <?php endforeach; ?>
-
-                        </select>
-                      </div>
+                    <label for="email2" class="col-sm-3 control-label">City:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="city" name="city" value="<?php echo $record['city']; ?>" >
                     </div>
-
-                    <div class="form-group">
-                      <label for="email2" class="col-sm-3 control-label">Region:</label>
-                      <div class="col-sm-9">
-                        <select onChange="" name="region" id="region" class="form-control" required>
-
-                          <?php foreach ($regions as $regionOption) : ?>
-                            <option value="<?php echo $regionOption; ?>" <?php if ($record['region'] === $regionOption)
-                                                                            echo 'selected'; ?>>
-                              <?php echo $regionOption . ' Region'; ?>
-                            </option>
-                          <?php endforeach; ?>
-
-                        </select>
-                      </div>
-                    </div>
+                  </div>
 
                     <div class="form-group">
                       <label for="email2" class="col-sm-3 control-label">Email</label>
