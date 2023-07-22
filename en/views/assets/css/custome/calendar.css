@@ -1,0 +1,153 @@
+.calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .days {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    grid-column: span 1;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (min-width: 1050px) {
+    .days {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .days {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .days {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+  /* .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    grid-column: span 1;
+  } */
+  
+  .day h3 {
+    margin-top: 0;
+  }
+  
+  .day ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .day li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+  .dayinner{
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dayinner .no_slots{
+    /* background-color: rosybrown; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dayinner .no_slots p{
+    font-size: smaller;
+    color: #a0a0a0;
+  }
+
+  .booked_slot{
+    color: #a0a0a0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: line-through;
+    margin-top: 15px;
+  }
+  .avalable_slot{
+    background-color: rgb(239, 251, 251);
+    border: 1px solid #20cfeaa6;
+    color: #20cfea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 15px;
+  }   
+  .avalable_slot_old{
+    background-color: rgb(239, 251, 251);
+    border: 1px solid #7d9ca1b4;
+    color: #7d9ca1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 15px;
+  }   
+  
+  .booked_slot_doctor{
+    background-color: rgb(239, 251, 251);
+    border: 1px solid #2eea20a6;
+    color: #3bea20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+  }
+  .avalable_slot_doctor{
+    background-color: rgb(239, 251, 251);
+    border: 1px solid #20cfeaa6;
+    color: #20cfea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  .avalable_slot:hover{
+    background-color: rgb(189, 249, 249);
+    border: 1px solid #20cfea;
+  } 
+  p {
+    margin: 0;
+  }
+  

@@ -1,0 +1,53 @@
+.appform{
+   
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.appform-select{
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#submit-button-booking{
+    background-color: black;
+    border-bottom: 0;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 35px;
+   
+}
+
+.patient-b-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .booking-form-2 .form-control {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid var(--border-color);
+    color: #6c757d;
+    font-weight: var(--font-weight-normal);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 15px;
+    transition: all 0.3s;
+  }
+  
+  
+  
+  .booking-form-2 #submit-button  {
+    background: var(--dark-color);
+    border-bottom: 0;
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin-top: 35px;
+  }
+  
+  .booking-form-2 #submit-button:hover {
+    background: var(--primary-color);
+  } */
