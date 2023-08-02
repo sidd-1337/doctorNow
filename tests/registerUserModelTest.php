@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/../models/registerUserModel.php';
-class reg_userModelTest extends TestCase
+class registerUserModelTest extends TestCase
 {
 
     public function testUserLogin_failure()
